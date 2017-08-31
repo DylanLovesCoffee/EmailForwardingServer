@@ -29,3 +29,9 @@ PASSWORD=fakepassword
 ```
 
 2. If your email domain is not google.mail.com or gmail.com, go into ```app/controllers/emails_controller.rb``` and change the ```:domain``` to whatever your correct domain is.
+
+3. If hosting on your local Rails server, simply send a POST to http://localhost:3000/emails
+
+## Built Using
+* Ruby on Rails 5.1.3
+* [Mikel Lindsaar's Mail gem](https://github.com/mikel/mail)
