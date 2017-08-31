@@ -1,24 +1,19 @@
-# README
+# Ruby on Rails Email Forwarding
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is an email forwarding server built with Ruby on Rails. Its primary function is to receive POST requests from the DylanLovesCoffee.github.io contact page, and forward them directly to my email inbox.
 
-Things you may want to cover:
+I've chosen to use Heroku to host the app due to my familiarity with it.
 
-* Ruby version
+## Getting Started
+'''$ git clone https://github.com/DylanLovesCoffee/EmailForwardingServer.git'''
 
-* System dependencies
+'''$ cd EmailForwardingServer'''
 
-* Configuration
+'''$ rails db:create'''
 
-* Database creation
+'''$ bundle'''
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Usage
+1. You will need to create a '''.env''' file in the root folder, where you'll then add your email and its respective password, as follows:
+'''EMAIL=dylan@gmail.com
+PASSWORD=fakepassword'''
